@@ -1,4 +1,3 @@
 #!/bin/bash
 
-rename -nv 's{ (\A|\s) (\w+) }{$1\u$2}xmsg' | mv temp/u
-
+find . -type f -name "[[:upper:]]*" -print0 | xargs -0 -I {} mv {} temp/u
