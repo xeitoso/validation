@@ -1,3 +1,4 @@
 #!/bin/bash
 
+mkdir -p tmp/u
 find . -type f -name "[[:upper:]]*" -print0 | xargs -0 -I {} mv {} tmp/u
