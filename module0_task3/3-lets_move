@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rename -nv 's{ (\A|\s) (\w+) }{$1\u$2}xmsg' | mv temp/u
+
